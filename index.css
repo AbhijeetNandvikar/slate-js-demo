@@ -1,0 +1,9 @@
+body {
+  margin: 0px;
+  background: white;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
