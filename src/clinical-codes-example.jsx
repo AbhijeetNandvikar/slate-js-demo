@@ -131,7 +131,7 @@ const ClinicalCodesExample = () => {
       const currentNode = Node.get(editor, selection.anchor.path);
       setTarget(selection);
       const currentText = currentNode.text;
-      const searchText = currentText.split("@")[1];
+      const searchText = currentText.split("/")[1];
       setCommandSearch(searchText ?? "");
     }
   };
@@ -197,7 +197,7 @@ const ClinicalCodesExample = () => {
   };
 
   const onKeyDownHandler = (event) => {
-    if (event.key === "@") {
+    if (event.key === "/") {
       setShowcommandMenu(true);
       setCommandMode(true);
       setCommandList(commandOptions);
